@@ -7,71 +7,79 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <p class="logo-header"><a href="#">Техномарт</a></p>
+        <a class="logo-header">Техномарт</a>
         <!-- Тут будет форма поиска -->
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
         <a class="checkout" href="#">Оформить заказ</a>
       </div>
       <div class="header-middle">
-        <h1>Интернет-магазин<br>
-           строительных материалов<br>
+        <h1>Интернет-магазин
+           строительных материалов
            и инструментов для ремонта</h1>
         <div class="contacts-info">
-          <!-- Тут будет форма с номером телефона -->
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная д. 19/8</p>
         </div>
         <ul class="user-navigation">
-          <li class="login-link">Войти</li>
-          <li class="registration">Регистрация</li>
+          <li class="login-link"><a href="#">Войти</a></li>
+          <li class="registration"><a href="#">Регистрация</a></li>
         </ul>
       </div>
-      <div class="header-bottom">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="special-offer.html">Спецпредложения</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-navigation header-bottom">
+        <ul class="site-navigation">
+          <li><a>Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special-offer.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <!-- Часть main пропускаем, исходя из задания -->
-      <section class="main-company">
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-           строительства не оставить равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-        <p>Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="list-info">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="company.html">Подробнее о компании</a>
-      </section>
-      <section class="main-contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <!-- Форма Карты, можно подключить через JS, пока пропускаем, но ставим заглушку img -->
-        <a class="map-info" href="#">
-          <img src="img/map.jpg" alt="Карта">
-        </a>
-        <a class="button" href="write-us.html">Заблудились? Напишите нам!</a>
-      </section>
+      <div class="main-wrapper">
+        <section class="main-company">
+          <h2 class="main-heading">Компания «Техномарт»</h2>
+          <div class="content-wrapper">
+            <p class="main-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+               строительства не оставить равнодушными любителей сэкономить на гастарбайтерах.</p>
+          </div>
+          <div class="content-wrapper">
+            <p class="main-paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+            <p class="main-paragraph">Техномарт работает со многими транспортными компаниями:</p>
+            <ul class="list-info">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+          </div>
+          <a class="button" href="company.html">Подробнее о компании</a>
+        </section>
+        <section class="main-contacts">
+          <h2 class="main-heading">Контакты</h2>
+          <div class="content-wrapper">
+            <p class="main-paragraph">Вы можете забрать товар сами, заехав в наш офис:</p>
+          </div>
+          <!-- Форма Карты, можно подключить через JS, пока пропускаем, но ставим заглушку img -->
+          <div class="content-wrapper">
+            <a class="map-info" href="#">
+              <img src="img/map.jpg" alt="Карта">
+            </a>
+          </div>
+          <a class="button" href="write-us.html">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <p class="logo-footer"><a href="#">Техномарт</a></p>
+        <a class="logo-footer">Техномарт</a>
         <div class="address-footer">
           <p>
-             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-             +7 (812) 555-05-55
+             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
         </div>
         <div class="footer-navigation-item">
@@ -92,10 +100,8 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <p>
-            © 2010-2016 Компания «Техномарт»<br>
-            Все права защищены
-          </p>
+          <p>© 2010-2016 Компания «Техномарт»</p>
+          <p>Все права защищены</p>
         </div>
         <div class="footer-social">
           <ul>
@@ -106,7 +112,7 @@
         </div>
         <div class="feedback">
           <p>Обратная связь</p>
-          <a>mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="produced">
           <p> Разработано -</p>
