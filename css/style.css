@@ -4,6 +4,7 @@ body {
 
   font-family: "Cuprum", Arial, sans-serif;
 }
+
 /* Стили хедер */
 .main-header {
   background-color: #f4f7f9;
@@ -31,12 +32,6 @@ body {
   background-color: #ba2732;
 }
 
-/* .search:hover,
-.search:focus,
-.search:active {
-  color: #ffffff;
-  background-color: #212a3a;
-} */
 .header-top a {
   color: #ffffff;
   text-decoration: none;
@@ -187,4 +182,335 @@ body {
 .site-navigation-hover:active {
   color: #ffffff;
   background-color: #1d2739;
+}
+/* Стили хедер каталога */
+.user-loged,
+.info-client {
+  list-style: none;
+}
+
+.user-loged a {
+  text-decoration: none;
+}
+
+.loged {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.loged:hover {
+  color: #000000;
+}
+
+.loged:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.my-orders,
+.cabinet {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.my-orders:hover,
+.cabinet:hover {
+  color: #ee3643;
+}
+
+.my-orders:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.cabinet:active {
+  display: none;
+}
+/* Стили main */
+.main-heading {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.main-paragraph {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.list-info {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.main-about .button {
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-about .button:hover {
+  color: #ffffff;
+  background-color: #ca2c37;
+}
+
+.main-about .button:active {
+  color: #ffffff;
+  background-color: #ba2732;
+}
+/* Стили main каталога */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog-heading {
+  text-transform: uppercase;
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  background-color: #f2f6f8;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-option {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.filter-button {
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  text-decoration: none;
+}
+.price-old {
+  color: #999999;
+}
+
+.price-new,
+.price {
+  color: #ffffff;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.button-buy {
+  color: white;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+
+.button-buy:hover {
+  color: white;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #5fbb2d
+}
+
+.button-buy:active {
+  color: white;
+  background-color: #518534;
+}
+
+.button-bookmark {
+  color: #32425c;
+  border: solid 3px #63a63e;
+}
+
+.button-bookmark:hover {
+  color: #32425c;
+  border: solid 3px #32425c;
+}
+
+.button-bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+  border: solid 3px #32425c;
+}
+
+.name-catalog-item {
+  color: #000000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+/* Стили footer */
+.main-footer {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.logo-footer {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643
+}
+
+.logo-footer a {
+  color: #ffffff;
+}
+
+.logo-footer:hover {
+  color: #ffffff;
+  background-color: #ca2c37;
+}
+
+.logo-footer:active {
+  color: #ffffff;
+  background-color: #ba2732;
+}
+
+.address-footer p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  width: 322px;
+  height: 40px;
+}
+
+.footer-top a {
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: #f3f7f9;
+  font-size: 18x;
+  line-height: 24px;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-item {
+  list-style: none;
+}
+
+.footer-item a {
+  color: #ffd180;
+  font-size: 18x;
+  line-height: 24px;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-item a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 18px;
+}
+/* Стили для соц-сетей пока оставляем */
+.feedback {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback a {
+  color: #ffd180;
+}
+
+.feedback a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.produced {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.produced a {
+  color: #ffd180;
+}
+
+.produced a:hover {
+  text-decoration: underline;
+}
+
+.produced a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+/* popup скрываем  */
+.modal {
+  display: none;
 }
