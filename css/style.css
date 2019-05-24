@@ -43,9 +43,6 @@ body {
 
 .bookmarks,
 .basket {
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
   background-color: #293449;
 }
 
@@ -57,15 +54,10 @@ body {
 
 .bookmarks:active,
 .basket:active {
-  color: #ffffff;
+  color: rgba(255 255 255, 0.6);
   background-color: #161d29;
 }
 
-.bookmarks:focus,
-.basket:focus {
-  color: #ffffff;
-  background-color: 293449;
-}
 
 .checkout {
   color: #ffffff;
