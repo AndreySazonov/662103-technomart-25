@@ -264,6 +264,10 @@ body {
 }
 
 .filter-button {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   border: 1px solid #e5e5e5;
 }
