@@ -225,6 +225,7 @@ body {
 .breadcrumbs {
   font-family: "PTSans", Arial, sans-serif;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .breadcrumbs a {
