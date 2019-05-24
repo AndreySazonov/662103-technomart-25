@@ -290,8 +290,7 @@ body {
 .price-new,
 .price {
   color: #ffffff;
-  background-color: red;
-  border: 1px solid red;
+  background-color: #ee3643;
 }
 
 .button-buy {
