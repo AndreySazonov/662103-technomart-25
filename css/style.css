@@ -131,27 +131,17 @@ body {
 
 }
 
-.site-navigation a {
+.site-navigation-hover {
   color: #ffffff;
   text-decoration: none;
-
-}
-
-.site-navigation-hover {
-  width: 127px;
-  height: 60px;
-  color: #ffffff;
-  background-color: #32425c;
-
 }
 
 .site-navigation-hover:hover {
-  color: #ffffff;
   background-color: #293449;
 }
 
 .site-navigation-hover:active {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
 /* Стили хедер каталога */
