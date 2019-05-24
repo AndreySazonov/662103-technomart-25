@@ -145,6 +145,12 @@ body {
   background-color: #1d2739;
 }
 /* Стили хедер каталога */
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
 .user-loged,
 .info-client {
   list-style: none;
