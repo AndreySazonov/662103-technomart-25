@@ -215,16 +215,15 @@ body {
 }
 
 .main-about .button:hover {
-  color: #ffffff;
   background-color: #ca2c37;
 }
 
 .main-about .button:active {
-  color: #ffffff;
   background-color: #ba2732;
 }
 /* Стили main каталога */
 .breadcrumbs {
+  font-family: "PTSans", Arial, sans-serif;
   list-style: none;
 }
 
