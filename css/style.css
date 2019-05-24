@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
@@ -238,7 +240,7 @@ body {
 }
 
 .main-paragraph {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PTSans", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -292,7 +294,7 @@ body {
 }
 
 .filter legend {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PTSans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -300,7 +302,7 @@ body {
 }
 
 .filter-option {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PTSans", sans-serif;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
@@ -363,7 +365,7 @@ body {
 
 .name-catalog-item {
   color: #000000;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PTSans", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
