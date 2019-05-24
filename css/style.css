@@ -316,13 +316,12 @@ body {
 }
 
 .button-bookmark:hover {
-  color: #32425c;
   border: solid 3px #32425c;
 }
 
 .button-bookmark:active {
-  color: rgba(50, 66, 92, 0.3);
-  border: solid 3px #32425c;
+  opacity: 0.3;
+  border: #32425c;
 }
 
 .name-catalog-item {
