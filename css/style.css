@@ -162,10 +162,6 @@ body {
   font-weight: normal;
 }
 
-.loged:hover {
-  color: #000000;
-}
-
 .loged:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -199,7 +195,7 @@ body {
 }
 
 .main-paragraph {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
