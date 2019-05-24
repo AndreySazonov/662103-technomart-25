@@ -280,7 +280,11 @@ body {
   text-decoration: none;
 }
 .price-old {
+  font-family: "PTSans", Arial, sans-serif;
   color: #999999;
+  text-decoration: line-through;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .price-new,
