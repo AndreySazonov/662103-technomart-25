@@ -299,6 +299,7 @@ body {
   color: white;
   box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
+  border-radius: 5px;
 }
 
 .button-buy:hover {
