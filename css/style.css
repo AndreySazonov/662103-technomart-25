@@ -303,13 +303,10 @@ body {
 }
 
 .button-buy:hover {
-  color: white;
-  box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #5fbb2d
 }
 
 .button-buy:active {
-  color: white;
   background-color: #518534;
 }
 
