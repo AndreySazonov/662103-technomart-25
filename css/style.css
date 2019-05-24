@@ -249,7 +249,7 @@ body {
 }
 
 .filter legend {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
@@ -257,7 +257,7 @@ body {
 }
 
 .filter-option {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
