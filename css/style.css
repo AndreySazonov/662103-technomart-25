@@ -278,6 +278,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   border: 1px solid #e5e5e5;
+  background: none;
 }
 
 .catalog-list {
@@ -321,6 +322,7 @@ body {
 .button-bookmark {
   color: #32425c;
   border: solid 3px #63a63e;
+  background: none;
 }
 
 .button-bookmark:hover {
