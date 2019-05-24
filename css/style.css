@@ -331,6 +331,10 @@ body {
   line-height: 20px;
   font-weight: bold;
 }
+
+.catalog-item-title a {
+  color: inherit;
+}
 /* Стили footer */
 .main-footer {
   background-color: #32425c;
@@ -348,17 +352,11 @@ body {
   background-color: #ee3643
 }
 
-.logo-footer a {
-  color: #ffffff;
-}
-
 .logo-footer:hover {
-  color: #ffffff;
   background-color: #ca2c37;
 }
 
 .logo-footer:active {
-  color: #ffffff;
   background-color: #ba2732;
 }
 
@@ -366,8 +364,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-  width: 322px;
-  height: 40px;
 }
 
 .footer-top a {
@@ -375,9 +371,7 @@ body {
 }
 
 .footer-phone {
-  font-size: 18px;
-  line-height: 24px;
-  color: #f3f7f9;
+  color: inherit;
 }
 
 .footer-navigation {
@@ -386,7 +380,7 @@ body {
 
 .footer-navigation a {
   color: #f3f7f9;
-  font-size: 18x;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -405,7 +399,7 @@ body {
 
 .footer-item a {
   color: #ffd180;
-  font-size: 18x;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -437,42 +431,27 @@ body {
   line-height: 18px;
 }
 /* Стили для соц-сетей пока оставляем */
-.feedback {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.feedback a {
-  color: #ffd180;
-}
-
-.feedback a:hover {
-  text-decoration: underline;
-}
-
-.feedback a:active {
-  text-decoration: none;
-  color: #ee3643;
-}
-
+.feedback,
 .produced {
   font-size: 16px;
   line-height: 18px;
 }
 
+.feedback a,
 .produced a {
   color: #ffd180;
 }
 
+.feedback a:hover,
 .produced a:hover {
   text-decoration: underline;
 }
 
+.feedback a:active,
 .produced a:active {
   text-decoration: none;
   color: #ee3643;
 }
-
 /* popup скрываем  */
 .modal {
   display: none;
