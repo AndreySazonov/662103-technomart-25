@@ -404,6 +404,9 @@ body {
 }
 /* Стили main каталога */
 .breadcrumbs {
+  display: flex;
+  width: 358px;
+  justify-content: space-between;
   font-family: "PTSans", Arial, sans-serif;
   list-style: none;
   text-transform: uppercase;
@@ -416,13 +419,34 @@ body {
   line-height: 18px;
 }
 
+.catalog {
+  width: 700px;
+}
+
+.catalog-item {
+  width: 200px;
+}
+
+
 .catalog-heading {
+  padding-top: 32px;
+  padding-right: 742px;
+  padding-bottom: 34px;
+  padding-left: 30px;
   text-transform: uppercase;
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   background-color: #f2f6f8;
+}
+
+.catalog-columns {
+  display: flex;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters fieldset {
@@ -455,12 +479,18 @@ body {
 }
 
 .catalog-list {
+  display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-list a {
   text-decoration: none;
 }
+
+}
+
 .price-old {
   font-family: "PTSans", Arial, sans-serif;
   color: #999999;
