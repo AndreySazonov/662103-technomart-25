@@ -10,18 +10,20 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <a class="logo-header">Техномарт</a>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get" name="search-form">
-          <label class="search">
-            <span class="visually-hiden">Поиск по сайту</span>
-            <input class="header-search" type="text" name="header-search" placeholder="Поиск:">
-          </label>
-        </form>
-        <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="basket" href="#">Корзина: 0</a>
-        <a class="checkout" href="#">Оформить заказ</a>
+        <div class="header-top-wrapper container">
+          <a class="logo-header">Техномарт</a>
+          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get" name="search-form">
+            <label class="search">
+              <span class="visually-hiden">Поиск по сайту</span>
+              <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
+            </label>
+          </form>
+          <a class="bookmarks" href="#">Закладки: 0</a>
+          <a class="basket" href="#">Корзина: 0</a>
+          <a class="checkout" href="#">Оформить заказ</a>
+        </div>
       </div>
-      <div class="header-middle">
+      <div class="header-middle container">
         <h1>Интернет-магазин
            строительных материалов
            и инструментов для ремонта</h1>
@@ -45,7 +47,7 @@
         </ul>
       </div>
       <nav class="main-navigation header-bottom">
-        <ul class="site-navigation">
+        <ul class="site-navigation container">
           <li><a>Главная</a></li>
           <li><a class="site-navigation-hover" href="company.html">Компания</a></li>
           <li><a class="site-navigation-hover" href="catalog.html">Каталог</a></li>
