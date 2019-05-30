@@ -351,7 +351,17 @@ body {
   display: none;
 }
 /* Стили main */
+.main-about {
+  display: flex;
+  margin-top: 82px;
+  margin-bottom: 86px;
+}
+
 .main-heading {
+  width: 550px;
+
+  margin-left: 0;
+
   color: #000000;
   font-size: 30px;
   line-height: 30px;
@@ -359,11 +369,18 @@ body {
   text-transform: uppercase;
 }
 
+.main-contacts {
+  width: 300px;
+  margin-left: 90px;
+}
+
 .main-paragraph {
+  display: block;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
+
 
 .list-info {
   color: #000000;
