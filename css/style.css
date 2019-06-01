@@ -9,8 +9,10 @@ body {
 
 
 .container {
-  width: 940px;
+  width: 960px;
+  padding: 0 10px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .visually-hiden {
@@ -82,7 +84,7 @@ body {
 .search-field {
   display: block;
   width: 221px;
-  padding: 12px 0 12px 49px;
+  padding: 12px 12px 12px 49px;
   font-size: 17px;
   line-height: 18px;
   border: none;
@@ -143,8 +145,8 @@ body {
   text-decoration: none;
   color: #ffffff;
   width: 150px;
-  padding-top: 12px;
-  padding-left: 12px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 
@@ -180,56 +182,56 @@ body {
 
 .header-middle {
   display: flex;
+  /* justify-content: space-between; */
+  padding: 46px 10px 40px 10px;
 }
 
-.header-middle h1 {
+.main-title {
   width: 196px;
-  height: 60px;
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  margin-top: 49px;
-  margin-left: 52px;
-  margin-bottom: 44px;
+  margin: 0 70px 0 55px;
 }
 
 .contacts-info {
-  margin-top: 46px;
-  margin-left: 71px;
+  margin: 0 50px 0 0;
 }
 
-.contacts-info a {
-  width: 144px;
-  padding-top: 10px;
-  padding-right: 49px;
-  padding-bottom: 8px;
-  padding-left: 71px;
-
+.phone {
+  display: block;
+  width: 270px;
+  margin: 0 0 5px 0;
+  padding: 13px 10px 11px 10px;
+  text-align: center;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
   border: 3px solid white;
+  box-sizing: border-box;
 }
 
-.contacts-info p {
-  width: 250px;
+.address {
+  margin: 0;
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
-  margin-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  text-align: center;
 }
 
 .user-navigation {
-  margin-top: 46px;
-  margin-left: auto;
+  padding: 0;
+  margin: 0 0 0 0;
+  /* margin-left: auto; */
 }
 
 .login-link {
+  display: flex;
   list-style: none;
+  text-align: right;
+  margin: 0 0 0 18px;
 }
 
 .login-link a {
@@ -237,24 +239,23 @@ body {
 }
 
 .login-back {
+  display: block;
   font-size: 21px;
   line-height: 21px;
-  width: 46px;
-  padding-top: 10px;
-  padding-right: 27px;
-  padding-bottom: 10px;
-  padding-left: 48px;
-  margin-right: 10px;
+  width: 121px;
+  margin: 0 10px 0 0;
+  padding: 12px 14px 12px 14px;
+  box-sizing: border-box;
 }
 
 .register-back {
+  display: block;
   font-size: 21px;
   line-height: 21px;
-  width: 100px;
-  padding-top: 10px;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-left: 25px;
+  width: 150px;
+  padding: 12px 14px 12px 14px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .login-back,
@@ -284,20 +285,27 @@ body {
 
   font-size: 17px;
   line-height: 17px;
-  padding-top: 17px;
-  padding-bottom: 21px;
 }
 
-.site-navigation-hover {
+.link-item {
+  flex-grow: 1;
+}
+
+.site-navigation-link {
+  display: block;
+  padding: 17px 31px 21px 31px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.site-navigation-hover:hover {
+.site-navigation-link.current {
+  background-color: #293449;
+}
+.site-navigation-link:hover {
   background-color: #293449;
 }
 
-.site-navigation-hover:active {
+.site-navigation-link:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
@@ -315,13 +323,21 @@ body {
   list-style: none;
 }
 
+.user-loged {
+  width: 299px;
+  background-color: #ffffff;
+  margin: 0 1px 0 0;
+}
+
 .user-loged a {
   text-decoration: none;
 }
 
 .loged {
+  display: block;
+  padding: 12px 10px 12px 13px;
   color: #000000;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   font-size: 21px;
   line-height: 21px;
   font-weight: normal;
@@ -357,8 +373,12 @@ body {
   margin-bottom: 86px;
 }
 
+.main-company {
+  width: 545px;
+  margin-right: 95px;
+}
+
 .main-heading {
-  width: 550px;
 
   margin-left: 0;
 
@@ -371,7 +391,6 @@ body {
 
 .main-contacts {
   width: 300px;
-  margin-left: 90px;
 }
 
 .main-paragraph {
@@ -405,11 +424,14 @@ body {
 /* Стили main каталога */
 .breadcrumbs {
   display: flex;
-  width: 358px;
-  justify-content: space-between;
+  padding: 0;
   font-family: "PTSans", Arial, sans-serif;
   list-style: none;
   text-transform: uppercase;
+}
+
+.breadcrumbs-item {
+  margin: 0 40px 0 0;
 }
 
 .breadcrumbs a {
@@ -424,15 +446,17 @@ body {
 }
 
 .catalog-item {
-  width: 200px;
+  width: 220px;
+  margin: 0 20px 20px 0;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 
 .catalog-heading {
-  padding-top: 32px;
-  padding-right: 742px;
-  padding-bottom: 34px;
-  padding-left: 30px;
+  padding: 32px 30px 34px 30px;
   text-transform: uppercase;
   color: #32425c;
   font-size: 30px;
@@ -447,6 +471,7 @@ body {
 
 .filters {
   width: 220px;
+  margin-right: 20px;
 }
 
 .filters fieldset {
@@ -480,9 +505,9 @@ body {
 
 .catalog-list {
   display: flex;
+  padding: 0;
   list-style: none;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .catalog-list a {
@@ -564,6 +589,7 @@ body {
 
 .logo-address {
   width: 340px;
+  margin-right: auto;
 }
 
 .logo-footer {
@@ -623,18 +649,30 @@ body {
 }
 /* пробный вариант */
 .footer-navigation-item {
-  width: 547px;
-  margin-left: 53px;
+  width: 550px;
 }
 
 .footer-navigation {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0;
   margin: 0;
   margin-top: 39px;
   margin-bottom: 39px;
+}
+
+.link-footer {
+  display: block;
+  margin: 0 30px;
+}
+
+.link-footer:first-child {
+  margin-left: 0;
+}
+
+.link-footer:last-child {
+  margin-right: 0;
 }
 
 .footer-navigation a {
@@ -657,10 +695,7 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  margin-left: 23px;
-
-
+  justify-content: flex-end;
 }
 
 .footer-item a {
@@ -680,7 +715,6 @@ body {
 
 .footer-bottom-wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-bottom {
@@ -701,11 +735,26 @@ body {
   font-size: 16px;
   line-height: 18px;
   width: 228px;
+  margin-right: 161px;
 
+}
+
+.footer-social {
+  width: 132px;
+  margin-right: 119px;
 }
 /* Стили для соц-сетей пока оставляем */
 .feedback-produced {
   margin-right: 15px;
+}
+
+.feedback {
+  width: 135px;
+  margin-right: 53px;
+}
+
+.produced {
+  width: 112px;
 }
 
 .feedback,
