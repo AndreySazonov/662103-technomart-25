@@ -15,8 +15,22 @@ body {
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Стили хедер */
@@ -409,6 +423,7 @@ body {
 .site-navigation {
   display: flex;
   padding: 0;
+  margin: 0;
   color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
@@ -677,18 +692,82 @@ body {
 }
 /* Стили main каталога */
 .breadcrumbs {
+  position: relative;
   display: flex;
   padding: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: "PT Sans", Arial, sans-serif;
   list-style: none;
   text-transform: uppercase;
 }
 
-.breadcrumbs-item {
-  margin: 0 40px 0 0;
+.breadcrumbs li:nth-child(2) {
+  padding-left: 55px;
+  padding-right: 39px;
 }
 
+.breadcrumbs li:nth-child(3) {
+  padding-right: 43px;
+}
+
+.breadcrumbs li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+
+  width: 14px;
+  height: 12px;
+  background-image: url("../img/icon/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 29px;
+
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 124px;
+
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 244px;
+
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* .breadcrumbs-item {
+  margin: 0 40px 0 0;
+} */
+
 .breadcrumbs a {
+  display: block;
   text-decoration: none;
   color: #000000;
   font-size: 13px;
@@ -717,6 +796,8 @@ body {
   line-height: 30px;
   font-weight: normal;
   background-color: #f2f6f8;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .catalog-columns {
