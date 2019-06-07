@@ -149,6 +149,18 @@ body {
   box-sizing: border-box;
 }
 
+.basket-full {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  width: 150px;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #ee3643;
+  padding-left: 50px;
+}
+
 .bookmarks {
   padding-left: 44px;
 }
@@ -167,6 +179,15 @@ body {
   background-color: #212a3a;
 }
 
+.basket-full:hover {
+  background-color: #ca2c37;
+}
+
+.basket-full:active {
+  background-color: #ba2732;
+  opacity: 0.6;
+}
+
 
 .bookmarks:active,
 .basket:active {
@@ -177,7 +198,8 @@ body {
 
 
 .header-top-wrapper .bookmarks,
-.header-top-wrapper .basket {
+.header-top-wrapper .basket,
+.header-top-wrapper .basket-full {
   position: relative;
 }
 
@@ -207,13 +229,28 @@ body {
   opacity: 0.3;
 }
 
+.basket-full::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
 .bookmarks:hover::before,
-.basket:hover::before {
+.basket:hover::before,
+.basket-full:hover::before {
   opacity: 1;
 }
 
 .bookmarks:active::before,
-.basket:active::before {
+.basket:active::before,
+.basket-full:active::before {
   opacity: 0.5;
 }
 
