@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
 }
 
-.visually-hiden {
+.visually-hidden {
   display: none;
 }
 
@@ -236,7 +236,6 @@ body {
 
 .header-middle {
   display: flex;
-  /* justify-content: space-between; */
   padding: 46px 10px 40px 10px;
 }
 
@@ -253,6 +252,10 @@ body {
   margin: 0 50px 0 0;
 }
 
+.contacts-info .phone {
+  position: relative;
+}
+
 .phone {
   display: block;
   width: 270px;
@@ -267,7 +270,20 @@ body {
   box-sizing: border-box;
 }
 
+.phone::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .address {
+  width: 270px;
   margin: 0;
   color: #32425c;
   font-size: 14px;
@@ -278,7 +294,6 @@ body {
 .user-navigation {
   padding: 0;
   margin: 0 0 0 0;
-  /* margin-left: auto; */
 }
 
 .login-link {
@@ -292,14 +307,40 @@ body {
   text-decoration: none;
 }
 
+.login-link .login-back {
+  position: relative;
+}
+
 .login-back {
   display: block;
   font-size: 21px;
   line-height: 21px;
   width: 121px;
   margin: 0 10px 0 0;
-  padding: 12px 14px 12px 14px;
+  padding: 12px 27px 12px 14px;
   box-sizing: border-box;
+}
+
+.login-back::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-back:hover::before {
+  background-image: url("../img/icon/icon-login-2.svg");
+}
+
+/* Не работает на клик */
+.login:active::before {
+  background-image: url("../img/icon/icon-login.svg");
 }
 
 .register-back {
@@ -797,6 +838,71 @@ body {
   width: 132px;
   margin-right: 119px;
 }
+
+.social-container {
+  display: flex;
+  padding: 0;
+}
+
+.social-button {
+  display: block;
+  position: relative;
+  flex-direction: row;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+.social-vk,
+.social-fb {
+  margin-right: 3px;
+}
+
+.social-vk::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 8px;
+
+  width: 26px;
+  height: 16px;
+  background-image: url("../img/icon/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-fb::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/icon/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-insta::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-button:hover,
+.social-button:active {
+  background-color: #ee3643;
+}
+
 /* Стили для соц-сетей пока оставляем */
 .feedback-produced {
   margin-right: 15px;
