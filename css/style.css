@@ -474,8 +474,8 @@ body {
 }
 
 .main-heading {
-
   margin-left: 0;
+  margin-bottom: 32px;
 
   color: #000000;
   font-size: 30px;
@@ -488,18 +488,70 @@ body {
   width: 300px;
 }
 
+.contacts-paragraph {
+  width: 179px;
+}
+
 .main-paragraph {
+  margin: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
+.content-paragraph,
+.about-paragraph,
+.contacts-paragraph {
+  margin-bottom: 25px;
+}
+
 
 .list-info {
+  position: relative;
+
   color: #000000;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.info-title::before{
+  content: "";
+  position: absolute;
+  /* top: 50%; */
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  margin-top: 9px;
+  background-color: #ee3643;
+  background-position: 0 0;
+}
+
+.info-title:nth-child(1),
+.info-title:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.content-map {
+  margin-bottom: 40px;
+}
+
+.company-button {
+  display: block;
+  width: 220px;
+  padding: 12px 10px 10px 41px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.write-us-button {
+  display: block;
+  width: 300px;
+  padding: 12px 10px 10px 63px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .main-about .button {
