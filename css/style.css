@@ -456,9 +456,10 @@ body {
 }
 
 .user-loged {
+  position: relative;
   width: 299px;
   background-color: #ffffff;
-  margin: 0 1px 0 0;
+  margin: 0 1px 8px 0;
 }
 
 .user-loged a {
@@ -467,7 +468,7 @@ body {
 
 .loged {
   display: block;
-  padding: 12px 10px 12px 13px;
+  padding: 12px 30px 12px 47px;
   color: #000000;
   /* background-color: #ffffff; */
   font-size: 21px;
@@ -475,15 +476,71 @@ body {
   font-weight: normal;
 }
 
+
 .loged:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.loged::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.log-out::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* Работает не корректно (не в совокупности, а по отдельности) */
+
+.loged:hover::before {
+  background-image: url("../img/icon/icon-user-2.svg");
+}
+
+.log-out:hover::after {
+  background-image: url("../img/icon/icon-logout-2.svg");
+}
+
+/* та же проблема с active, что и на Главной */
+.loged:active::before {
+  background-image: url("../img/icon/icon-user.svg");
+}
+
+.log-out:active::after {
+  background-image: url("../img/icon/icon-logout.svg");
+}
+
+.info-client {
+  position: relative;
+}
+
 .my-orders,
 .cabinet {
+  display: inline-block;
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
+  box-sizing: border-box;
+}
+
+.my-orders {
+  padding-left: 18px;
+  padding-right: 32px;
 }
 
 .my-orders:hover,
@@ -497,6 +554,19 @@ body {
 
 .cabinet:active {
   display: none;
+}
+
+.my-orders::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 108px;
+
+  width: 4px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 50%;
+  background-position: 0 0;
 }
 /* Стили main */
 .main-about {
