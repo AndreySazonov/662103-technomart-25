@@ -149,6 +149,17 @@ body {
   box-sizing: border-box;
 }
 
+.bookmarks {
+  padding-left: 44px;
+}
+
+.basket {
+  padding-left: 50px;
+}
+
+.checkout {
+  padding-left: 20px;
+}
 
 .bookmarks:hover,
 .basket:hover {
@@ -156,12 +167,55 @@ body {
   background-color: #212a3a;
 }
 
+
 .bookmarks:active,
 .basket:active {
-  color: rgba(255 255 255, 0.6);
+  color: #ffffff;
+  opacity: 0.6;
   background-color: #161d29;
 }
 
+
+.header-top-wrapper .bookmarks,
+.header-top-wrapper .basket {
+  position: relative;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.bookmarks:hover::before,
+.basket:hover::before {
+  opacity: 1;
+}
+
+.bookmarks:active::before,
+.basket:active::before {
+  opacity: 0.5;
+}
 
 .checkout {
   background-color: #63a63e;
