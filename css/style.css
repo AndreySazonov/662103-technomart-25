@@ -916,76 +916,158 @@ input[type="radio"].visually-hidden {
   background: none;
 }
 
-.catalog-list {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  flex-wrap: wrap;
+.catalog-items {
+  width: 700px;
+  margin: 20px auto;
 }
 
-.catalog-list a {
-  text-decoration: none;
-}
+/* .catalog-items .row {
+  margin-left: -20px;
+} */
 
-}
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 
-.price-old {
-  font-family: "PT Sans", Arial, sans-serif;
-  color: #999999;
-  text-decoration: line-through;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.price-new,
-.price {
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
-.button-buy {
-  color: white;
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
-  border-radius: 5px;
-}
-
-.button-buy:hover {
-  background-color: #5fbb2d
-}
-
-.button-buy:active {
-  background-color: #518534;
-}
-
-.button-bookmark {
-  color: #32425c;
-  border: solid 3px #63a63e;
-  background: none;
-}
-
-.button-bookmark:hover {
-  border: solid 3px #32425c;
-}
-
-.button-bookmark:active {
-  opacity: 0.3;
-  border: #32425c;
-}
-
-.catalog-item-title {
-  color: #000000;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+  text-align: center;
+
+  border: 1px solid #ccc;
 }
 
-.catalog-item-title a {
-  color: inherit;
+.catalog-items {
+  font-size: 0;
 }
+
+.catalog-item {
+  font-size: 16px;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url("../img/catalog-item/new-flag.png") no-repeat 0 0;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
+}
+
+.catalog-item .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .discount {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
+}
+
+.catalog-item .price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-item .price:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  width: 0;
+  height: 0;
+
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
 /* Стили footer */
 .footer-top {
   display: flex;
