@@ -389,8 +389,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon/icon-login-2.svg");
 }
 
-/* Не работает на клик */
-.login:active::before {
+
+.login-back:active::before {
   background-image: url("../img/icon/icon-login.svg");
 }
 
@@ -810,6 +810,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 41px;
+
   border: none;
 }
 
@@ -819,19 +823,93 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
 }
 
 .filter-option {
   font-family: "PT Sans", Arial, sans-serif;
+
+  text-transform: uppercase;
+  padding-left: 35px;
+  margin-bottom: 17px;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/icon/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -4px;
+
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -4px;
+
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  width: 140px;
+  padding: 9px 0px 9px 38px;
+  text-align: left;
   text-transform: uppercase;
   color: #000000;
   border: 1px solid #e5e5e5;
