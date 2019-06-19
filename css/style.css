@@ -929,14 +929,20 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
-.slide-button:hover {
+.slide-button:hover,
+.popular-button:hover {
   background-color: #ca2c37;
 }
 
-.slide-button:active {
+.slide-button:active,
+.popular-button:active {
   background-color: #ba2732;
 }
 /* --------------- */
+
+.popular-manufacturers {
+  margin-bottom: 65px;
+}
 
 .popular-back {
   display: flex;
@@ -972,7 +978,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #ee3643;
   text-align: center;
-  /* vertical-align: center; */
 }
 
 .main-popular-catalog {
@@ -985,9 +990,28 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
   padding: 0;
-
 }
 
+.popular-company {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner {
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner:nth-child(4n){
+  margin-right: -20px;
+}
 
 .main-about {
   display: flex;
