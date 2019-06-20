@@ -511,7 +511,6 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 12px 30px 12px 47px;
   color: #000000;
-  /* background-color: #ffffff; */
   font-size: 21px;
   line-height: 21px;
   font-weight: normal;
@@ -546,8 +545,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
-/* Работает не корректно (не в совокупности, а по отдельности) */
 
 .loged:hover::before {
   background-image: url("../img/icon/icon-user-2.svg");
@@ -1932,7 +1929,7 @@ input[type="radio"].visually-hidden {
   /* display: none; */
 }
 
-/* .modal-write-us {
+.modal-write-us {
   position: fixed;
   display: block;
   width: 620px;
@@ -1945,4 +1942,122 @@ input[type="radio"].visually-hidden {
   border-top: 7px solid #ee3643;
 }
 
-.write-us-form  */
+.write-to-us {
+  margin: 0;
+  display: block;
+  padding-bottom: 22px;
+}
+
+.write-to-us:last-child {
+  padding-bottom: 37px;
+}
+
+.answer-form {
+  padding: 24px 80px 0px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-us-name,
+.write-us-email {
+  width: 200px;
+  padding: 11px 0px 11px 16px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 5px;
+}
+
+.write-us-text {
+  padding: 11px 0px 0px 16px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+  border-radius: 5px;
+}
+
+.write-us-name:hover,
+.write-us-email:hover,
+.write-us-text:hover {
+  border-color: #b5b5b5;
+}
+
+.write-us-name:focus,
+.write-us-email:focus,
+.write-us-text:focus {
+  border-color: #ee3643;
+}
+
+
+.form-button {
+  padding: 37px 0px 37px 0px;
+  background-color: #f4f4f4;
+  display: block;
+}
+
+.modal-send {
+  width: 460px;
+  margin: 0 0 0 80px;
+  padding: 11px 50px 8px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.modal-close-write,
+.modal-close-map {
+  position: relative;
+  padding: 0;
+  border: none;
+}
+
+.modal-close-write::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -610px;
+
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon/icon-close.svg");
+  background-repeat: no-repeat;
+  position: 0 0;
+}
+
+.modal-write-us {
+  display: none;
+}
+
+.modal-map {
+  position: fixed;
+  display: block;
+  width: 940px;
+  height: 446px;
+  top: 5%;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+  border: none;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+.modal-close-map::after {
+  content: "";
+  position: absolute;
+  top: -460px;
+  right: -930px;
+
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon/icon-close.svg");
+  background-repeat: no-repeat;
+  position: 0 0;
+}
+
+.modal-map {
+  display: none;
+}
