@@ -77,8 +77,8 @@
             <a class="category-button" href="#">Для стройки</a>
           </div>
           <article class="slider">
-            <input type="radio" id="button-1" name="slay">
-            <input type="radio" id="button-2" name="slay" checked>
+            <input type="radio" id="button-1" name="switch">
+            <input type="radio" id="button-2" name="switch" checked>
             <div class="slider-controls">
               <label for="button-1"></label>
               <label for="button-2"></label>
@@ -205,7 +205,45 @@
         </div>
       </div>
       <div class="main-service">
-        
+        <div class="container">
+          <section class="service">
+            <h2 class="main-heading service-heading">Сервисы</h2>
+            <div class="service-annotation">
+              <p class="main-paragraph">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+              <p class="main-paragraph">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
+            <div class="service-block">
+              <input type="radio" id="btn-1" name="service-switch" checked>
+              <input type="radio" id="btn-2" name="service-switch">
+              <input type="radio" id="btn-3" name="service-switch">
+              <div class="service-switch">
+                <label class="switch-button" for="btn-1">Доставка</label>
+                <label class="switch-button" for="btn-2">Гарантия</label>
+                <label class="switch-button" for="btn-3">Кредит</label>
+              </div>
+              <div class="service-block-content">
+                <div class="service-touch-button deliver">
+                  <span>Доставка</span>
+                  <p class="main-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                  <p class="main-paragraph">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </div>
+                <div class="service-touch-button warranty">
+                  <span>Гарантия</span>
+                  <p class="main-paragraph">Если купленный товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием, вы всегда
+                    можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                  <p class="main-paragraph">Дом уж восстановите как нибудь сами.</p>
+                </div>
+                <div class="service-touch-button credit">
+                  <span>Кредит</span>
+                  <p class="main-paragraph">Залезть в долговую яму стало проще!</p>
+                  <p class="main-paragraph">Кредитные консультанты придут к вам на помощь.</p>
+                  <a class="button credit-button" href="#">Отправить заявку</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
 
       <div class="main-about container">
