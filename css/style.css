@@ -2320,3 +2320,111 @@ input[type="radio"].visually-hidden {
 .modal-map {
   display: none;
 }
+
+.modal-added-to-cart {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  z-index: 200;
+  transform: translateX(-50%);
+  display: block;
+  border-top: 7px solid #ee3643;
+  width: 620px;
+  background: #fff;
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-added {
+  padding: 68px 0px 68px 179px;
+}
+
+.added-to-cart {
+  position: relative;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.added-to-cart::before {
+  position: absolute;
+  content: "";
+  top: -15px;
+  left: -90px;
+
+
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-close-buy {
+  padding: 0;
+  border: none;
+}
+
+.modal-close-buy::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: rotate(-45deg);
+  width: 20px;
+  height: 5px;
+  background: #ee3643;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-buy::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 5px;
+  background: #ee3643;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-checkout {
+  background-color: #f1f1f1;
+}
+
+.button-checkout,
+.modal-continue {
+  display: block;
+  width: 220px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.block-checkout {
+  padding-top: 37px;
+  padding-bottom: 37px;
+  display: flex;
+}
+
+.button-checkout {
+  margin-left: 80px;
+  margin-right: 20px;
+  padding: 12px 0px 12px 0px;
+  background-color: #ee3643;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-continue {
+  padding: 12px 0px 12px 0px;
+  border: none;
+}
+
+.modal-added-to-cart {
+  display: none;
+}
