@@ -1794,9 +1794,6 @@ input[type="radio"].visually-hidden {
   border-bottom-color: #63a63e;
 }
 
-.catalog-item .actions {
-  display: none;
-}
 
 .catalog-item:hover .actions {
   display: block;
