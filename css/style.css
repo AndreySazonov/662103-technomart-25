@@ -1719,7 +1719,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 218px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   line-height: 20px;
   font-weight: bold;
@@ -1855,6 +1855,63 @@ input[type="radio"].visually-hidden {
 
   border: 20px solid white;
   border-left-color: #ee3643;
+}
+
+.page {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.previous {
+  display: block;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  border: 1px solid #e5e5e5;
+  padding: 8px 14px 10px 16px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.following {
+  display: block;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  border: 1px solid #e5e5e5;
+  padding: 8px 31px 10px 31px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.previous:hover,
+.following:hover {
+  border-color: #bdc6ca;
+}
+
+.previous:active,
+.following:active {
+  border-color: #ee3643;
+}
+
+.previous.active-page {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ffffff;
+}
+
+.about {
+  background-color: #f4f7f9;
+}
+
+.about-product {
+  padding: 68px 0px 68px 0px;
 }
 /* Стили footer */
 .footer-top {
