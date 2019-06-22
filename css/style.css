@@ -1603,6 +1603,108 @@ input[type="radio"].visually-hidden {
 }
 
 
+.sorting {
+  width: 700px;
+  display: flex;
+  padding: 10px 0px 10px 19px;
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.sort-title {
+  margin-right: 139px;
+}
+
+.sort-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dashed #ee3643;
+
+}
+.to-price {
+  display: block;
+  margin-right: 71px;
+}
+
+.to-type {
+  margin-right: 65px;
+}
+.to-function {
+  margin-right: 41px;
+}
+
+.to-up {
+  margin-right: 10px;
+}
+
+.to-up,
+.to-down {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.sort-up {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon/icon-up.svg");
+  background-size: 11px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sort-down {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon/icon-down.svg");
+  background-size: 11px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sort-up:hover,
+.sort-down:hover {
+  opacity: 0.3;
+}
+
+.sort-up:active,
+.sort-up.check {
+  background-image: url("../img/icon/icon-up-2.png");
+  opacity: 1;
+}
+
+.sort-down:active,
+.sort-down.check {
+  background-image: url("../img/icon/icon-down-2.png");
+  opacity: 1;
+}
+
+.sort-link:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-link:active,
+.sort-link.check {
+  color: #ee3643;
+  border: none;
+}
+
+
 .catalog-items {
   width: 700px;
   margin: 20px auto;
