@@ -12,13 +12,12 @@
       <div class="header-top">
         <div class="header-top-wrapper container">
           <a class="logo-header" href="index.html">Техномарт</a>
-          <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get" name="search-form">
-            <label class="search">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <label class="search-icon" for="search-field"></label>
-              <input class="search-field" type="text" name="header-search" placeholder="Поиск:">
-            </label>
-          </form>
+          <div class="search">
+            <form action="https://echo.htmlacademy.ru" method="get" name="search-form">
+              <input class="search-field" type="search" id="search" name="search" placeholder="Поиск:">
+              <label class="search-label" for="search"></label>
+            </form>
+          </div>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="basket-full" href="#">Корзина: 10</a>
           <a class="checkout" href="#">Оформить заказ</a>
