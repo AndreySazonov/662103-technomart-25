@@ -326,12 +326,15 @@ input[type=search]:focus+label {
 }
 
 .main-title {
-  width: 196px;
+  /* width: 196px; */
+  width: 197px;
   color: #ee3643;
   font-size: 16px;
+  font-weight: normal;
   line-height: 23px;
   font-style: italic;
-  margin: 0 70px 0 55px;
+  /* margin: 0 70px 0 55px; */
+  margin: 4px 71px 0px 52px;
 }
 
 .contacts-info {
@@ -346,8 +349,9 @@ input[type=search]:focus+label {
   display: block;
   width: 270px;
   margin: 0 0 5px 0;
-  padding: 13px 10px 11px 10px;
-  text-align: center;
+  /* padding: 13px 10px 11px 10px; */
+  padding: 9px 10px 8px 70px;
+  /* text-align: center; */
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
@@ -359,7 +363,8 @@ input[type=search]:focus+label {
 .phone::before {
   content: "";
   position: absolute;
-  left: 15px;
+  top: 10px;
+  left: 11px;
 
   width: 19px;
   height: 19px;
@@ -455,17 +460,22 @@ input[type=search]:focus+label {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header-bottom {
+  padding-bottom: 60px;
+  margin-bottom: 59px;
+}
 
 .site-navigation {
   display: flex;
-  padding: 0;
-  margin-bottom: 59px;
+  padding: 0 20px;
+  margin: 0;
+  /* margin-bottom: 59px; */
   color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
   list-style: none;
   justify-content: space-around;
-
+  text-align: center;
   font-size: 17px;
   line-height: 17px;
 }
@@ -476,7 +486,8 @@ input[type=search]:focus+label {
 
 .site-navigation-link {
   display: block;
-  padding: 17px 31px 21px 31px;
+  /* padding: 17px 31px 21px 31px; */
+  padding: 19px 31px 24px 31px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -511,7 +522,8 @@ input[type=search]:focus+label {
   position: relative;
   width: 299px;
   background-color: #ffffff;
-  margin: 0 1px 8px 0;
+  /* margin: 0 1px 8px 0; */
+  margin: 0 1px 5px 0;
 }
 
 .user-loged a {
@@ -590,8 +602,8 @@ input[type=search]:focus+label {
 
 .my-orders {
   position: relative;
-  /* padding-left: 18px; */
-  margin-right: 32px;
+  /* margin-right: 32px; */
+  margin-right: 27px;
 }
 
 .my-orders:hover,
