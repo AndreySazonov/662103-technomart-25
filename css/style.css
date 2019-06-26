@@ -660,6 +660,8 @@ input[type=search]:focus+label {
   width: 300px;
   display: block;
   position: relative;
+  padding: 23px 130px 23px 23px;
+  box-sizing: border-box;
 }
 
 .category-name {
@@ -668,20 +670,20 @@ input[type=search]:focus+label {
   color: #ffffff;
   margin: 0;
   margin-bottom: 12px;
-  padding: 23px 130px 0px 23px;
+  /* padding: 23px 130px 0px 23px; */
 }
 
 .category-button {
   display: block;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 25px;
-  margin-bottom: 22px;
+  /* margin-left: 25px; */
+  /* margin-bottom: 22px; */
   padding: 9px 0 9px 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 135px;
+  max-width: 135px;
   background-color: rgba(0, 0, 0, 0.1);
   color: rgba(255, 255, 255, 1);
 }
@@ -703,7 +705,8 @@ input[type=search]:focus+label {
   content: "";
   position: absolute;
   top: 31px;
-  left: 213px;
+  /* left: 213px; */
+  right: 43px;
 
   width: 44px;
   height: 65px;
@@ -721,7 +724,8 @@ input[type=search]:focus+label {
   content: "";
   position: absolute;
   top: 33px;
-  left: 197px;
+  /* left: 197px; */
+  right: 28px;
 
   width: 75px;
   height: 61px;
@@ -739,7 +743,8 @@ input[type=search]:focus+label {
   content: "";
   position: absolute;
   top: 31px;
-  left: 191px;
+  /* left: 191px; */
+  right: 31px;
 
   width: 78px;
   height: 62px;
@@ -764,10 +769,11 @@ input[type=search]:focus+label {
   content: "";
   position: absolute;
   top: 26px;
-  left: 196px;
+  /* left: 196px; */
+  right: 45px;
 
-  width: 78px;
-  height: 62px;
+  width: 59px;
+  height: 72px;
   background-image: url("../img/icon/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -781,8 +787,10 @@ input[type=search]:focus+label {
 .category-delivery::after {
   content: "";
   position: absolute;
-  top: 175px;
-  left: 191px;
+  /* top: 175px; */
+  /* left: 191px; */
+  top: 32px;
+  right: 31px;
 
   width: 78px;
   height: 63px;
@@ -900,6 +908,10 @@ input[type=search]:focus+label {
 	font-family: "PT Sans","Arial",sans-serif;
 	color: #fff;
   background: 0 0;
+}
+
+.slide-preview {
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 .slide .button,
@@ -1068,7 +1080,9 @@ input[type=search]:focus+label {
 
 .service-block {
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-block::after {
@@ -1085,12 +1099,13 @@ input[type=search]:focus+label {
 }
 
 .service-switch {
-	position: absolute;
-	z-index: 30;
-	bottom: 98%;
-	left: 0%;
-	width: 60px;
-	height: 10px;
+	/* position: absolute; */
+	/* z-index: 30; */
+	/* bottom: 98%; */
+	/* left: 0%; */
+	/* width: 60px; */
+	/* height: 10px; */
+  width: 240px;
 
 }
 
@@ -1122,6 +1137,10 @@ input[type=search]:focus+label {
 	outline: none;
 }
 
+.service-block-content {
+  width: 620px;
+}
+
 .service-touch-button p,
 .service-touch-button span {
 	display: block;
@@ -1131,7 +1150,8 @@ input[type=search]:focus+label {
 }
 
 .service-touch-button span {
-	padding: 9px 0 31px 79px;
+	/* padding: 9px 0 31px 79px; */
+  padding: 9px 0 31px 0;
 	text-transform: uppercase;
 	color: #32425c;
 	font-size: 36px;
@@ -1140,7 +1160,7 @@ input[type=search]:focus+label {
 
 .service-touch-button p {
 	width: 290px;
-	padding-left: 80px;
+	/* padding-left: 80px; */
 	font-size: 13px;
 	font-family: "PT Sans", "Arial", sans-serif;
 }
@@ -1191,7 +1211,7 @@ input[type=search]:focus+label {
 
 .service-touch-button {
 	display: none;
-	margin-left: 242px;
+	/* margin-left: 242px; */
 	padding-bottom: 124px;
 }
 
