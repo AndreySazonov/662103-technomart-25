@@ -416,7 +416,9 @@ input[type=search]:focus+label {
   content: "";
   position: absolute;
   left: 14px;
-  top: 14px;
+  /* top: 14px; */
+  top: 50%;
+  transform: translateY(-50%);
 
   width: 20px;
   height: 17px;
@@ -424,6 +426,7 @@ input[type=search]:focus+label {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 
 .login-back:hover::before {
   background-image: url("../img/icon/icon-login-2.svg");
@@ -1597,9 +1600,28 @@ input[type=search]:focus+label {
   background-image: url("../img/icon/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/icon/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+/* .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   left: -35px;
@@ -1611,7 +1633,7 @@ input[type=search]:focus+label {
   background-image: url("../img/icon/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+} */
 
 .filter-input-radio + label::before {
   content: "";
@@ -1624,9 +1646,14 @@ input[type=search]:focus+label {
   background-image: url("../img/icon/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1638,6 +1665,20 @@ input[type=search]:focus+label {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+
+/* .filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -4px;
+
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/icon/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
 
 .filter-button {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2041,7 +2082,7 @@ input[type=search]:focus+label {
   display: block;
   width: 220px;
   line-height: 63px;
-  font-size: 23px;
+  font-size: 30px;
   background-color: #ee3643;
   text-align: center;
   cursor: pointer;
@@ -2050,7 +2091,7 @@ input[type=search]:focus+label {
   margin-bottom: 37px;
 }
 
-.logo-footer::before {
+/* .logo-footer::before {
   position: absolute;
   content: "";
   top: 100%;
@@ -2058,7 +2099,7 @@ input[type=search]:focus+label {
   width: 100%;
   height: 5px;
   background-color: #ee3643;
-}
+} */
 
 .logo-footer::after {
   position: absolute;
@@ -2067,7 +2108,8 @@ input[type=search]:focus+label {
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: rgba(0,0,0,0.24);
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0,0,0,0.24);
 }
 
 .logo-footer:hover {
@@ -2166,6 +2208,19 @@ input[type=search]:focus+label {
   color: #ffffff;
 }
 
+.copyright-top,
+.copyright-bottom {
+  margin: 0;
+}
+
+.copyright-top {
+  margin-top: 38px;
+}
+
+.copyright-bottom {
+  margin-bottom: 34px;
+}
+
 .footer-bottom a {
   color: #ffffff;
   text-decoration: none;
@@ -2191,6 +2246,8 @@ input[type=search]:focus+label {
 .social-container {
   display: flex;
   padding: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .social-button {
