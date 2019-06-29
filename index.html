@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -239,7 +239,7 @@
           <h2 class="main-heading">Компания «Техномарт»</h2>
           <div class="content-about">
             <p class="main-paragraph content-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-               строительства не оставить равнодушными любителей сэкономить на гастарбайтерах.</p>
+               строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           </div>
           <div class="content-about">
             <div class="about-paragraph">
@@ -349,5 +349,23 @@
       <img src="img/catalog-item/modal-map-index.jpg" width="940" height="446" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
       <button class="modal-close-map" type="button"></button>
     </section>
+
+    <section class="modal modal-added-to-cart">
+      <div class="modal-added">
+        <span class="icon-added"></span>
+        <span class="added-to-cart">
+          Товар добавлен в корзину!
+        </span>
+        <button class="modal-close-buy" type="button"></button>
+      </div>
+      <div class="modal-checkout">
+        <div class="block-checkout">
+          <a class="button-checkout" href="#">Оформить заказ</a>
+          <button class="modal-continue" type="button">Продолжить покупки</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
