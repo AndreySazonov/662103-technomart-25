@@ -99,7 +99,7 @@ input[type=search] {
 	line-height: 18px;
 	font-weight: 400;
 	font-style: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	color: #ffffff;
 	background-color: #293449;
 	border: none;
@@ -135,7 +135,7 @@ input[type=search]:hover + label {
 	background-position: 0 0;
 }
 
-input[type=search]:focus+label {
+input[type=search]:focus + label {
 	background: url("../img/icon/icon-search-2.png") no-repeat;
 	background-position: 0 0;
 }
@@ -602,7 +602,7 @@ input[type=search]:focus+label {
 .my-orders,
 .cabinet {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   color: #32425c;
   font-size: 16px;
   line-height: 18px;
@@ -828,6 +828,7 @@ input[type=search]:focus+label {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 6px;
   height: 6px;
   margin: 0px 2px 0px 3px;
@@ -890,8 +891,8 @@ input[type=search]:focus+label {
 	        transform: rotate(45deg)
 }
 
-#button-1:checked~.slider-controls label[for=button-1],
-#button-2:checked~.slider-controls label[for=button-2] {
+#button-1:checked ~ .slider-controls [for=button-1],
+#button-2:checked ~ .slider-controls [for=button-2] {
 	background:#ee3643
 }
 
@@ -910,7 +911,7 @@ input[type=search]:focus+label {
 	line-height: 24px;
 	font-weight: 400;
 	font-style: normal;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	color: #fff;
   background: 0 0;
 }
@@ -922,7 +923,7 @@ input[type=search]:focus+label {
 .slide .button,
 .slide-title {
 	font-style: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -964,8 +965,8 @@ input[type=search]:focus+label {
   display: none;
 }
 
-#button-1:checked~.slides .slide:nth-child(1),
-#button-2:checked~.slides .slide:nth-child(2) {
+#button-1:checked ~ .slides .slide:nth-child(1),
+#button-2:checked ~ .slides .slide:nth-child(2) {
 	display: block;
 }
 
@@ -1137,7 +1138,7 @@ input[type=search]:focus+label {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 30px;
-	font-family: "Cuprum", "Arial", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	text-align: left;
 	color: #ffffff;
 	background-color: #32425c;
@@ -1147,9 +1148,9 @@ input[type=search]:focus+label {
 	cursor: pointer;
 }
 
-#btn-1:checked~.service-switch label[for=btn-1],
-#btn-2:checked~.service-switch label[for=btn-2],
-#btn-3:checked~.service-switch label[for=btn-3] {
+#btn-1:checked ~ .service-switch [for=btn-1],
+#btn-2:checked ~ .service-switch [for=btn-2],
+#btn-3:checked ~ .service-switch [for=btn-3] {
 	color: #32425c;
 	background: #ffffff;
 	border-top: 1px solid #ffffff;
@@ -1173,13 +1174,13 @@ input[type=search]:focus+label {
 	text-transform: uppercase;
 	color: #32425c;
 	font-size: 36px;
-	font-family: "Cuprum", "Arial", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 }
 
 .service-touch-button p {
 	width: 290px;
 	font-size: 13px;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .credit-button {
@@ -1191,7 +1192,7 @@ input[type=search]:focus+label {
 	line-height: 18px;
 	font-weight: 400;
 	font-style: normal;
-	font-family: "Cuprum", "Arial", sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -1229,9 +1230,9 @@ input[type=search]:focus+label {
 	padding-bottom: 124px;
 }
 
-#btn-1:checked~.service-block-content .deliver,
-#btn-2:checked~.service-block-content .warranty,
-#btn-3:checked~.service-block-content .credit {
+#btn-1:checked ~ .service-block-content .deliver,
+#btn-2:checked ~ .service-block-content .warranty,
+#btn-3:checked ~ .service-block-content .credit {
 	display: block;
 }
 
@@ -1327,6 +1328,10 @@ input[type=search]:focus+label {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
+}
+
+.write-us {
+  display: block;
 }
 
 .write-us-button {
@@ -1511,7 +1516,7 @@ input[type=search]:focus+label {
 	font-style: normal;
 	font-size: 17px;
 	line-height: 18px;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	background-color: #f7f3ec;
 	border: none;
@@ -1522,7 +1527,7 @@ input[type=search]:focus+label {
 .dotted-line {
   width: 10px;
   height: 1px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -1597,15 +1602,8 @@ input[type=search]:focus+label {
 }
 
 .filter-input-checkbox:checked + label::before {
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: -2px;
-  width: 27px;
-  height: 23px;
   background-image: url("../img/icon/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 1;
 }
 
 .filter-input-checkbox:checked + label:hover::before {
@@ -1710,7 +1708,6 @@ input[type=search]:focus+label {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.18);
   border-bottom: 1px dotted #ee3643;
-
 }
 
 .to-price {
@@ -1721,6 +1718,7 @@ input[type=search]:focus+label {
 .to-type {
   margin-right: 65px;
 }
+
 .to-function {
   margin-right: 41px;
 }
@@ -1860,7 +1858,6 @@ input[type=search]:focus+label {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 .actions .bookmark {
   color: #32425c;
@@ -2379,6 +2376,7 @@ input[type=search]:focus+label {
   line-height: 18px;
   border: 2px solid #dee3e4;
   border-radius: 5px;
+  max-width: 444px;
 }
 
 .write-us-name:hover,
