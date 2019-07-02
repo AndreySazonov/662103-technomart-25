@@ -1137,12 +1137,17 @@ input[type="radio"].visually-hidden {
 	background-color: #32425c;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
-	outline: none;
 	cursor: pointer;
 }
 
 .switch-button:hover {
   background-color: #293449;
+}
+
+#btn-1:focus ~ .service-switch [for=btn-1],
+#btn-2:focus ~ .service-switch [for=btn-2],
+#btn-3:focus ~ .service-switch [for=btn-3] {
+  box-shadow: 0 0 5px blue;
 }
 
 #btn-1:checked ~ .service-switch [for=btn-1],
@@ -1152,7 +1157,6 @@ input[type="radio"].visually-hidden {
 	background: #ffffff;
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
-	outline: none;
 }
 
 .service-block-content {
@@ -1568,17 +1572,22 @@ input[type="radio"].visually-hidden {
 .filter-option {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  padding-left: 35px;
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
   list-style: none;
 }
 
+.filter-input-checkbox:focus + label,
+.filter-input-radio:focus + label {
+  box-shadow: 0 0 5px blue;
+}
+
 .filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
+  padding-left: 35px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1588,7 +1597,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: 0;
   top: -2px;
   width: 27px;
   height: 23px;
@@ -1624,7 +1633,7 @@ input[type="radio"].visually-hidden {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: 0;
   top: -4px;
   width: 25px;
   height: 25px;
@@ -1638,15 +1647,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input-radio:checked + label::before {
-  content: "";
-  position: absolute;
-  left: -35px;
-  top: -4px;
-  width: 25px;
-  height: 25px;
   background-image: url("../img/icon/radio-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .filter-input-radio:checked + label:hover::before {
@@ -2368,6 +2369,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   border: 2px solid #dee3e4;
   border-radius: 5px;
+  outline: none;
 }
 
 .write-us-text {
@@ -2378,6 +2380,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #dee3e4;
   border-radius: 5px;
   max-width: 444px;
+  outline: none;
 }
 
 .write-us-name:hover,
@@ -2396,14 +2399,15 @@ input[type="radio"].visually-hidden {
   padding: 37px 0px 37px 0px;
   background-color: #f4f4f4;
   display: block;
+  text-align: center;
 }
 
 .modal-send {
   width: 460px;
-  margin: 0 0 0 80px;
   padding: 11px 50px 8px;
   text-align: center;
   color: #fff;
+  border: none;
 }
 
 .modal-close-write,
